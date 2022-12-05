@@ -7,17 +7,16 @@ int number2 = Convert.ToInt32(Console.ReadLine());
 
 if (number1 == number2)
 {
-Console.Write("Числа равны и = ");   
-Console.WriteLine(number1);
+Console.Write("max = min = " + number1);   
 }
 else
 if (number1 > number2)
 {
-Console.Write("Число один больше числа два и = ");   
-Console.WriteLine(number1);
+Console.WriteLine("max = " + number1);   
+Console.WriteLine("min = " + number2);
 }
 else
 {
-Console.Write("Число два больше числа один и = ");   
-Console.WriteLine(number2);   
+Console.WriteLine("max = " + number2);   
+Console.WriteLine("min = " + number1);
 }

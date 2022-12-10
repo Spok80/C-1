@@ -11,3 +11,5 @@ resSqrt = (int)(resSqrt); // Выводит целую часть числа Б�
 Console.WriteLine($"{resSqrt:f2}"); // Вывод числа с 2 знаками после запятой
 Console.WriteLine($"{resPow}");
 
+// string[] strings = Console.ReadLine().Split(", "); // Ввод через запятую сразу несколько значений (НО как строка)
+// Console.WriteLine(string.Join("/", strings));

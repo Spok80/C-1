@@ -15,17 +15,16 @@ int[] GetRandomArray(int length, int leftRange, int rightRange)
     return array;
 }
 
-int sum = 0;
-int[] FindEvenNumber(int[] array)
+int FindEvenNumber(int[] array)
 {
-
+     int sum = 0;
      for(int i = 0; i < array.Length; i++)
      {
         if (array[i] % 2 == 0)
         sum = sum + 1; // Если число четное, учитываем его в общем количестве четных
      }
         
-     return array;
+     return sum;
 }
 
 const int LENGTH = 10;
@@ -34,5 +33,4 @@ const int RIGHTRANGE = 999;
 
 int[] massive = GetRandomArray(LENGTH, LEFTRANGE, RIGHTRANGE);
 Console.WriteLine($"{string.Join(", ", massive)}");
-FindEvenNumber(massive);
-Console.WriteLine($"Количество четных чисел в массиве - {sum}");
+Console.WriteLine($"Количество четных чисел в массиве - {FindEvenNumber(massive)}");

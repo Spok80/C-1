@@ -18,17 +18,16 @@ int[] GetRandomArray(int length, int leftRange, int rightRange)
     return array;
 }
 
-int sum = 0;
-int[] FindSum(int[] array)
+int FindSum(int[] array)
 {
-
+     int sum = 0;
      for(int i = 0; i < array.Length; i++)
      {
         if (array[i] >= 10 && array[i] <= 99)
         sum = sum + 1; // Если число из диапазона [10,99], учитываем его в общем количестве чисел
      }
         
-     return array;
+     return sum;
 }
 
 const int LENGTH = 123;
@@ -37,5 +36,4 @@ const int RIGHTRANGE = 150;
 
 int[] massive = GetRandomArray(LENGTH, LEFTRANGE, RIGHTRANGE);
 Console.WriteLine($"{string.Join(", ", massive)}");
-FindSum(massive);
-Console.WriteLine($"Количество чисел в массиве в диапазоне [10,99] - {sum}");
+Console.WriteLine($"Количество чисел в массиве в диапазоне [10,99] - {FindSum(massive)}");

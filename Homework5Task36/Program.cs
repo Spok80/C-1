@@ -15,16 +15,15 @@ int[] GetRandomArray(int length, int leftRange, int rightRange)
     return array;
 }
 
-int sum = 0;
-int[] FindSum(int[] array)
+int FindSum(int[] array)
 {
-
+     int sum = 0;
      for(int i = 1; i < array.Length; i=i+2)
      {
             sum = sum + array[i]; // Находим сумму элементов стоящих на нечетных позициях
      }
         
-     return array;
+     return sum;
 }
 
 const int LENGTH = 10;
@@ -33,5 +32,4 @@ const int RIGHTRANGE = 99;
 
 int[] massive = GetRandomArray(LENGTH, LEFTRANGE, RIGHTRANGE);
 Console.WriteLine($"{string.Join(", ", massive)}");
-FindSum(massive);
-Console.WriteLine($"Сумма элементов стоящих на нечетных позициях - {sum}");
+Console.WriteLine($"Сумма элементов стоящих на нечетных позициях - {FindSum(massive)}");

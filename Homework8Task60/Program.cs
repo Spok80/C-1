@@ -11,7 +11,6 @@ int[,,] FillMatrix()
 {
     int[,,] Matrix3d = new int[2,2,2];
     int n = 10;
-    var rand = new Random();
     for(int i = 0; i < 2; i++)
     {
         for (int j = 0; j < 2; j++)

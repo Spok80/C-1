@@ -42,19 +42,19 @@ void PrintMatrix(int[,] matr)
 
 double[] FindSred(int[,] matrix)
 {
-    double[] summaMas = new double[matrix.GetLength(0)];
+    double[] summaMas = new double[matrix.GetLength(1)];
     
-    for(int j = 0; j < matrix.GetLength(0); j++)
+    for(int j = 0; j < matrix.GetLength(1); j++)
     {
     
         double summa = 0;
         
-        for (int i = 0; i < matrix.GetLength(1); i++)
+        for (int i = 0; i < matrix.GetLength(0); i++)
         {
             summa = summa + matrix[i,j];
             
         }
-        summaMas[j] = Math.Round(summa / matrix.GetLength(1),1);
+        summaMas[j] = Math.Round(summa / matrix.GetLength(0),1);
     }
 
     return summaMas;    

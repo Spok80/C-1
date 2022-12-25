@@ -15,7 +15,7 @@ int[] GetRandomArray(int length, int leftRange, int rightRange)
 }
 
 
-int FindMaxMin(int[] array)
+(int, int) FindMaxMin(int[] array)
 {
     int max = array[0];
     int min = array[0];
@@ -31,7 +31,7 @@ int FindMaxMin(int[] array)
                 min = array[i];
             }
      }
-     return (max - min);
+     return (max, min);
 }
 
 const int LENGTH = 10;
@@ -40,4 +40,5 @@ const int RIGHTRANGE = 1000;
 
 int[] massive = GetRandomArray(LENGTH, LEFTRANGE, RIGHTRANGE);
 Console.WriteLine($"{string.Join(", ", massive)}");
-Console.WriteLine($"Разность максимального и минимального числа массива - {FindMaxMin(massive)}");
+(int max, int min) = FindMaxMin(massive);
+Console.WriteLine($"Разность максимального {max} и минимального числа массива {min} равна {max - min}");

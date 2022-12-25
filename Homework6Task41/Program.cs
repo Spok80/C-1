@@ -5,14 +5,14 @@
 
 // 1, -7, 567, 89, 223-> 4
 
-string number=InputNumber();
+string number = InputNumber();
 
 int sum = 0;
 while (number != "STOP")
 {
   int count = Convert.ToInt32(number);
   if (count > 0) sum++;  
-  number=InputNumber();
+  number = InputNumber();
 }
 Console.WriteLine($"Число введенных чисел больше нуля - {sum}");
 

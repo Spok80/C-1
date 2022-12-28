@@ -16,7 +16,7 @@ int Summa(int m, int n)
 {
     
     if (n == m) return sum + m;
-    return sum + n + (Summa(m, n - 1));;
+    return sum + n + (Summa(m, n - 1));
 }
 Console.Write(Summa(min, max));
 

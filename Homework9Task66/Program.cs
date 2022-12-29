@@ -9,7 +9,7 @@ int sum = 0;
 
 if (max < min || max < 0 || min < 0)
 {
-    Console.Write("Не корректно заданы значения M и N");
+    Console.Write("Не корректно заданы значения min и max");
     return;
 }
 int Summa(int m, int n)
